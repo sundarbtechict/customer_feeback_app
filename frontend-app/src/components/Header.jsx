@@ -11,6 +11,12 @@ const Header = () => {
             { location.pathname == '/guest' || location.pathname == '/' ? <Link to={`/login`}>
                 <button className='rounded bg-gray-800 text-white text-sm px-3 py-1'>Admin</button>
             </Link>:'' }
+            { location.pathname == '/admin' ? <Link to={`/`}>
+                <button className='rounded bg-gray-800 text-white text-sm px-3 py-1'>Logout</button>
+            </Link>:'' }
+            { location.pathname == '/login' ? <Link to={`/`}>
+                <button className='rounded bg-gray-800 text-white text-sm px-3 py-1'>Guest</button>
+            </Link>:'' }
         </div>
     </div>
   )

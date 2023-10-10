@@ -22,11 +22,11 @@ const LoginPage = () => {
         <div className=' pt-4'>
             <form name='loginForm'>
                 <div className='py-2 flex'>
-                    <label className=' text-sm w-[100px]'>Email:</label>
+                    <label className=' text-sm w-[100px] py-2 font-semibold'>Email</label>
                     <input name='name' className=' login-input' onChange={(e)=> setUsername(e.target.value)}></input>
                 </div>
                 <div className='py-2 flex'>
-                    <label className=' text-sm w-[100px]'>Password:</label>
+                    <label className=' text-sm w-[100px] py-2 font-semibold'>Password</label>
                     <input name='email' type='password' className='login-input' onChange={(e)=> setPassword(e.target.value)}></input>
                 </div>
                 <div className='py-6 text-center'>
