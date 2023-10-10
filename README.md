@@ -7,6 +7,12 @@ cd backend-app
 npm install
 npm start
 
+# Admin user credentials
+
+Email: admin
+Password: admin
+
+
 # Frontend App configuration
 
 cd frontend-app
