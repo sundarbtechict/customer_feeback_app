@@ -1,21 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import api from "../api/feedback";
+import React from 'react';
+import useFetchFeedbacks from '../utils/useFetchFeedbacks';
 
 
 const Adminpage = () => {
 
-    const [feedbackList, setFeedbackList] = useState([]);
-
-    const fetchFeedbacks = async ()=>{
-        const response = await api.get('/feedbacks');
-        console.log(response.data)
-        setFeedbackList(response.data);
-    }
-
-
-    useEffect(()=>{
-        fetchFeedbacks();
-    },[])
+    const feedbackList = useFetchFeedbacks();
 
   return (
     <div className='w-full'>
