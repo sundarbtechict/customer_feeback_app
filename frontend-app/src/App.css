@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .feedback-input{
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    padding: 4px 8px;
+    background-color: #F5F5F5;
+    display: block;
+    width: 100%;
+  }
+  .feedback-input:focus-visible{
+    border-color: #696969	;
+    outline: none;
+  }
+  .login-input{
+    border: 1px solid #E0E0E0;
+    flex: 1;
+    border-radius: 5px;
+    padding: 4px 8px;
+    background-color: white;
+  }
+  .login-input:focus-visible{
+    border-color: #696969	;
+    outline: none;
+  }
+}
